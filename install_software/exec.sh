@@ -85,7 +85,7 @@ echo "${foo}" | sudo -S -k pacman -Su --noconfirm
 
 echo "${foo}" | sudo -S -k pacman -Sy --noconfirm \
   spacefm bitwarden firefox thunderbird clementine git expect base-devel postgresql copyq vlc\
-  xfce4-cpugraph-plugin qbittorrent
+  xfce4-cpugraph-plugin qbittorrent ksysguard
 
 echo "${foo}" | sudo -S -k usermod -u 5432 postgres
 echo "${foo}" | sudo -S -k groupmod -g 5432 postgres
