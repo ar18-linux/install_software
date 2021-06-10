@@ -95,6 +95,7 @@ aur "alarm-clock-applet"
 
 aur fsearch-git
 aur masterpdfeditor
+aur google-chrome
 
 #su - "$(logname)" -c "yay -S pakku"
 #su - "$(logname)" -c "pakku -S alarm-clock-applet"
