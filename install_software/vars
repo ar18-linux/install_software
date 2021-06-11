@@ -1,0 +1,3 @@
+if [ -z "${debug+x}" ]; then
+  debug=0
+fi
