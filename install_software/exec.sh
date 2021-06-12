@@ -71,9 +71,7 @@ function install_libunique2() {
 }
 
 
-if [ "${debug}" = "0" ]; then
-  echo "${foo}" | sudo -S -k pacman -Syy
-fi
+echo "${foo}" | sudo -S -k pacman -Syy
 
 echo "${foo}" | sudo -S -k pacman -Su --noconfirm
 
