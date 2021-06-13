@@ -36,20 +36,9 @@ set -eu
 if [ ! -v ar18_helper_functions ]; then rm -rf "/tmp/helper_functions_$(whoami)"; cd /tmp; git clone https://github.com/ar18-linux/helper_functions.git; mv "/tmp/helper_functions" "/tmp/helper_functions_$(whoami)"; . "/tmp/helper_functions_$(whoami)/helper_functions/helper_functions.sh"; cd "${script_dir}"; export ar18_helper_functions=1; fi
 obtain_sudo_password
 
-. "${script_dir}/functions.sh"
+ar18_install "${install_dir}" "${module_name}" "${script_dir}"
 
-for item in "${pacman_packages[@]}"; do
-  pacman_install "${item}"
-done
-
-echo "${ar18_sudo_password}" | sudo -S -k usermod -u 5432 postgres
-echo "${ar18_sudo_password}" | sudo -S -k groupmod -g 5432 postgres
-
-install_libunique2
-
-for item in "${aur_packages[@]}"; do
-  aur_install "${item}"
-done
+"${script_dir}/${module_name}/exec.sh"
 
 ##################################SCRIPT_END###################################
 # Restore old shell values
