@@ -38,7 +38,8 @@ obtain_sudo_password
 
 ar18_install "${install_dir}" "${module_name}" "${script_dir}"
 
-"${script_dir}/${module_name}/exec.sh"
+echo "${ar18_sudo_password}" | sudo -Sk chmod +x "${install_dir}/${module_name}/exec.sh"
+"${install_dir}/${module_name}/exec.sh"
 
 ##################################SCRIPT_END###################################
 # Restore old shell values
