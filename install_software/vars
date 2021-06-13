@@ -19,7 +19,7 @@ pacman_packages=(
   tigervnc
 )
 
-aur_packages(
+aur_packages=(
   alarm-clock-applet
   fsearch-git
   masterpdfeditor
