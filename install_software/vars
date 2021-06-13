@@ -24,6 +24,7 @@ aur_packages=(
   fsearch-git
   masterpdfeditor
   google-chrome
-  hstr
+  hstr # History filter for shell
   anydesk-bin
+  vdhcoapp # Companion app Video DownloadHelper
 )
