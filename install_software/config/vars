@@ -17,6 +17,8 @@ pacman_packages=(
   lsof 
   psi 
   tigervnc
+  xfce4-sensors-plugin
+  nomacs # Image viewer
 )
 
 aur_packages=(
