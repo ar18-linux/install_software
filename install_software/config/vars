@@ -19,6 +19,7 @@ pacman_packages=(
   tigervnc
   xfce4-sensors-plugin
   nomacs # Image viewer
+  at
 )
 
 aur_packages=(
