@@ -30,4 +30,5 @@ aur_packages=(
   hstr # History filter for shell
   anydesk-bin
   vdhcoapp # Companion app Video DownloadHelper
+  whatsdesk-bin
 )
