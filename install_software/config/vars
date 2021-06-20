@@ -8,6 +8,7 @@ pacman_packages=(
   expect 
   base-devel 
   postgresql 
+  nmap
   copyq 
   vlc
   xfce4-cpugraph-plugin 
