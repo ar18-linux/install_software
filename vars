@@ -1,5 +1,11 @@
 module_name="install_software"
 
+if [ ! -v user_name ]; then
+  user_name="$(whoami)"
+fi
+if [ ! -v install_dir ]; then
+  install_dir="/opt/ar18"
+fi
 if [ ! -v debug ]; then
   debug=0
 fi
