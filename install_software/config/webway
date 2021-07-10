@@ -3,4 +3,5 @@ pacman_packages=(
 )
 
 aur_packages=(
+  hstr # History filter for shell
 )
