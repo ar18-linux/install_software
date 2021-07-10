@@ -1,4 +1,5 @@
 pacman_packages=(
+  hstr
 )
 
 aur_packages=(
