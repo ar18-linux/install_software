@@ -1,5 +1,4 @@
 pacman_packages=(
-  spacefm
 )
 
 aur_packages=(
