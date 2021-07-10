@@ -73,8 +73,8 @@ for item in "${pacman_packages[@]}"; do
   ar18.pacman.install "${item}"
 done
 
-ar18.script.execute_with_sudo usermod -u 5432 postgres
-ar18.script.execute_with_sudo groupmod -g 5432 postgres
+#ar18.script.execute_with_sudo usermod -u 5432 postgres
+#ar18.script.execute_with_sudo groupmod -g 5432 postgres
 
 install_libunique2
 
