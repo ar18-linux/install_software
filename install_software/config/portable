@@ -7,6 +7,7 @@ pacman_packages=(
   git 
   expect 
   base-devel 
+  net-tools
   postgresql 
   nmap
   copyq 
