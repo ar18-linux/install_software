@@ -182,13 +182,18 @@ trap 'err_report "${BASH_SOURCE[0]}" ${LINENO} "${BASH_COMMAND}"' ERR
 
 ar18.script.import ar18.script.install
 ar18.script.import ar18.script.execute_with_sudo
+ar18.script.import ar18.script.read_target
 
 . "${script_dir}/vars"
 
 ar18.script.install "${install_dir}" "${module_name}" "${script_dir}"
 
+set +u
+ar18_deployment_target="$(ar18.script.read_target "${1}")"
+set -u
+
 ar18.script.execute_with_sudo chmod +x "${install_dir}/${module_name}/exec.sh"
-"${install_dir}/${module_name}/exec.sh" "1"
+"${install_dir}/${module_name}/exec.sh" "${ar18_deployment_target}"
 
 ##################################SCRIPT_END###################################
 set +x
