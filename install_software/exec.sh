@@ -185,6 +185,8 @@ ar18.script.import ar18.script.execute_with_sudo
 ar18.script.import ar18.pacman.install
 ar18.script.import ar18.aur.install
 ar18.script.import ar18.script.read_target
+ar18.script.import ar18.script.source_or_execute_config 
+
 
 ar18.script.obtain_sudo_password
 
