@@ -194,7 +194,7 @@ set +u
 ar18_deployment_target="$(ar18.script.read_target "${1}")"
 set -u
 
-ar18.script.source_or_execute_config "source" "deploy" "${ar18_deployment_target}"
+ar18.script.source_or_execute_config "source" "install_software" "${ar18_deployment_target}"
 
 . "${script_dir}/functions.sh"
 
